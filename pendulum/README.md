@@ -1,2 +1,2 @@
 # A Simple Pendulum
-![demo](https://github.com/theeemanuel/physics/new/main/pendulum/pendulum.gif)
+![demo](https://github.com/theeemanuel/physics/blob/main/pendulum/pendulum.gif)
