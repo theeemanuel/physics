@@ -27,7 +27,7 @@ float S(float a, float u, float t)
 
 int main ()
 {
-	float x = 20, y, t, u = 0.0,  v, sign = 1, fps = 120, dt = 0.01, h = 25, restituition = 0.9, g = 9.8;
+	float x = 20, y, t, u = 1,  v, sign = 1, fps = 120, dt = 0.1, h = 25, restituition = 0.95, g = 9.8;
 	char ball = 'o';
 	
 	h = 30-h;
@@ -45,7 +45,8 @@ int main ()
 		y = h;
 		while(y<30)
 		{
-			x += u;
+			if (y<29)
+				x += u;
 			v += g*t;
 			y += S(g, v, t);
 			t += dt;
@@ -59,7 +60,8 @@ int main ()
 		v *= restituition;
 		while(v > 0)
 		{
-			x += u;
+			if (y<29)
+				x += u;
 			v -= g*t;
 			y -= S(g, v, t);
 			t += dt;
