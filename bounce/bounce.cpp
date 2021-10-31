@@ -45,7 +45,7 @@ int main ()
 		y = h;
 		while(y<30)
 		{
-			if (y<29)
+			if (y<28)
 				x += u;
 			v += g*t;
 			y += S(g, v, t);
@@ -60,7 +60,7 @@ int main ()
 		v *= restituition;
 		while(v > 0)
 		{
-			if (y<29)
+			if (y<28)
 				x += u;
 			v -= g*t;
 			y -= S(g, v, t);
